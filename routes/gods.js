@@ -8,10 +8,10 @@ const {
 } = require('../controllers/gods')
 
 //vamo a definir las rutas
-router.get('/gods/', getGods);
-router.get('/gods/:id', getGod);
-router.post('/gods/', createGod);
-router.patch('/gods/:id', updateGod);
-router.delete('/gods/:id', deleteGod);
+router.get('/', getGods);
+router.get('/:id', getGod);
+router.post('/', createGod);
+router.patch('/:id', updateGod);
+router.delete('/:id', deleteGod);
 
 module.exports = router;

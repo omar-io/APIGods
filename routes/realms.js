@@ -8,10 +8,10 @@ const {
 } = require('../controllers/realms')
 
 //vamo a definir las rutas
-router.get('/realms/', getRealms);
-router.get('/realms/:id', getRealm);
-router.post('/realms/', createRealm);
-router.patch('/realms/:id', updateRealm);
-router.delete('/realms/:id', deleteRealm);
+router.get('/', getRealms);
+router.get('/:id', getRealm);
+router.post('/', createRealm);
+router.patch('/:id', updateRealm);
+router.delete('/:id', deleteRealm);
 
 module.exports = router;

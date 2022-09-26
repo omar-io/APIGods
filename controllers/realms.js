@@ -9,7 +9,7 @@ function createRealm(req, res) {
     const body = req.body;
 
     // .create devuelve una promesa, hay k ysar un then ó await
-    God.create(body).then(realm => {
+    Realm.create(body).then(realm => {
         res.status(201).json(realm);
     });
 }
